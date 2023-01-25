@@ -1,13 +1,13 @@
 
 import styles from './card.module.css';
-import Contador from './counter';
+import Counter from './counter';
 
 export default function Card(props) {
    const {name, species, gender, image, onClose} = props;
    return (
    <div className={styles.card}>
       <div className={styles.buttonsDiv}>
-         <Contador numero={0}/>
+         <Counter count={0}/>
       <button className={styles.close} onClick={onClose}>X</button>
       </div>
       <img src={image} alt={name} className={styles.image} />
