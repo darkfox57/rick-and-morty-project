@@ -28,7 +28,6 @@ import styles from './card.module.css';
 
 
 function ShowCount(props) {
- console.log(props);
  return(
      <>
      <span>{props.count}</span>
@@ -37,7 +36,6 @@ function ShowCount(props) {
 }
 
 export default function Counter(props) {
- console.log(props);
  const [ count, setCount ] = useState(props.count);
  const handleClick =() => {
  setCount(count + 1 )
