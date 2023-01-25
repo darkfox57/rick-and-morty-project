@@ -1,0 +1,112 @@
+.card {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ align-items: center;
+ padding: 30px 5px 30px 5px;
+ max-width: 250px;
+ background: #f857a53b;
+ background: -webkit-radial-gradient(circle, #f857a567 0%, #ff585870 100%);
+ background: radial-gradient(circle, #f857a567 0%, #ff585870 100%);
+ border-radius: 16px;
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ transition: all 0.5s ease-in-out;
+ position: relative;
+ color: #fff;
+ height: 250px;
+}
+
+/* .card {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ padding-bottom: 30px;
+ max-width: 20%;
+ background: #fff;
+ border-radius: 16px;
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ transition: all 0.5s ease-in-out;
+ position: relative;
+ overflow: hidden;
+} */
+
+.card:hover {
+ scale: 1.05;
+ height: 320px;
+}
+
+
+.contentDiv {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ top: 50px;
+ opacity: 0;
+ transition: all 0.5s ease-in-out;
+ position: absolute;
+ z-index: 1;
+}
+
+.card:hover .contentDiv {
+ top: 310px;
+ opacity: 1;
+}
+
+.image {
+ border: 5px solid #fff;
+ border-radius: 50%;
+ width: 90%;
+ transition: all 0.5s ease-in-out;
+ z-index: 10;
+}
+
+/* .image:hover {
+ transform: translateY(-25px);
+} */
+
+
+.buttonsDiv {
+ display: flex;
+ justify-content: space-between;
+ position: absolute;
+ top: 15px;
+ right: 20px;
+}
+
+.title {
+ font-size: 1.5rem;
+ line-height: 1.6rem;
+ margin: 0;
+ transition: all 0.5s ease-in-out;
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+.title:hover {
+ scale: 1.1;
+}
+
+.content {
+ font-size: 1.2rem;
+ line-height: 1.3rem;
+ margin: 0;
+ font-family: 'Nobile', sans-serif;
+}
+
+.close {
+ border: none;
+ background-color: transparent;
+ color: #fff;
+ font-family: 'Nobile', sans-serif;
+ font-size: 18px;
+ font-weight: 700;
+ transition: all 0.3s ease-in-out;
+ cursor: pointer;
+}
+
+.close:hover {
+ font-size: 22px;
+}

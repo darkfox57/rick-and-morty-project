@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nobile&family=Pridi:wght@200&display=swap');
+
+.App {
+   text-align: center;
+   background-image: url(./assets/rick-and-morty-bg.webp);
+   background-size: auto;
+   background-attachment: fixed;
+   background-position: center;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+}
