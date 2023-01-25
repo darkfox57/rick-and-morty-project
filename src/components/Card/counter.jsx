@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './card.module.css';
 
 export default class Contador extends React.Component {
  constructor(props) {
@@ -16,10 +17,10 @@ export default class Contador extends React.Component {
  }
  render(){
   return(
-   <>
-   <button onClick={this.onButtonClick}></button>
-   <span>Total: {this.state.contador}</span>
-   </>
+   <div className={styles.counter}>
+   <button onClick={this.onButtonClick}>❤</button>
+   <span>{this.state.contador}</span>
+   </div>
   )
  }
 }
