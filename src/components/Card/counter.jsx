@@ -11,14 +11,14 @@ export default class Contador extends React.Component {
  onButtonClick = () => {
   console.log('this', this)
   this.setState({
-   contador: this.state.contador + 1
+   contador: this.state.contador ++
   })
  }
  render(){
   return(
    <>
    <button onClick={this.onButtonClick}></button>
-   <h2>Total: {this.state.contador}</h2>
+   <span>Total: {this.state.contador}</span>
    </>
   )
  }
