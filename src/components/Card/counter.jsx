@@ -11,7 +11,7 @@ export default class Contador extends React.Component {
  onButtonClick = () => {
   console.log('this', this)
   this.setState({
-   contador: this.state.contador ++
+   contador: this.state.contador +1
   })
  }
  render(){
