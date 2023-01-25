@@ -7,7 +7,7 @@ export default function Card(props) {
    return (
    <div className={styles.card}>
       <div className={styles.buttonsDiv}>
-         <Contador numero='0'/>
+         <Contador numero={0}/>
       <button className={styles.close} onClick={onClose}>X</button>
       </div>
       <img src={image} alt={name} className={styles.image} />
