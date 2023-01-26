@@ -4,6 +4,7 @@ import Counter from './counter';
 
 export default function Card(props) {
    const {name, species, gender, image, onClose} = props;
+   
    return (
    <div className={styles.card}>
       <div className={styles.buttonsDiv}>
