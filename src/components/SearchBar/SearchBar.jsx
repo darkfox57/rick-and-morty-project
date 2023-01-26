@@ -15,7 +15,7 @@ export default function SearchBar (props) {
    }
    return(
       <form onSubmit={handleSumbit} className={styles.searchBar} >
-         <input className={styles.searchInput} name={search} type="text" onChange={handleInputValue}/>
+         <input className={styles.searchInput} placeholder='Busca tu personaje con el ID' name={search} type="text" onChange={handleInputValue}/>
          <button className={styles.searchButton} type='submit' onClick={()=>{onSearch(search)}}>Agregar</button>
       </form>
 
