@@ -5,14 +5,19 @@ export default function SearchBar (props) {
    const {  onSearch } = props
    const [ search, setSearch ] = useState('')
    const handleInputValue =(event)=>{
-      console.log(event.target.value);
       setSearch(event.target.value)
    }
-
+   const handleSumbit =(e)=>{
+      e.preventDefault()
+      if(Object.keys(search).length) {
+         e.target.reset()
+      }
+   }
    return(
-   <div className={styles.searchBar}>
-    <input className={styles.searchInput} name={search} type="text" onChange={handleInputValue}/>
-    <button className={styles.searchButton} onClick={()=>{onSearch()}}>Agregar</button>
-   </div>
+      <form onSubmit={handleSumbit} className={styles.searchBar} >
+         <input className={styles.searchInput} name={search} type="text" onChange={handleInputValue}/>
+         <button className={styles.searchButton} type='submit' onClick={()=>{onSearch(search)}}>Agregar</button>
+      </form>
+
    )
   }

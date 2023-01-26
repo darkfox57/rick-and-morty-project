@@ -9,7 +9,7 @@ export default function Card(props) {
    <div className={styles.card}>
       <div className={styles.buttonsDiv}>
          <Counter count={0}/>
-      <button className={styles.close} onClick={onClose}>X</button>
+         <button className={styles.close} onClick={onClose}>X</button>
       </div>
       <img src={image} alt={name} className={styles.image} />
       <h2 className={styles.title}>{name}</h2>

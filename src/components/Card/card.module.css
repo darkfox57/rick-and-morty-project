@@ -5,6 +5,7 @@
  align-items: center;
  padding: 30px 5px 30px 5px;
  max-width: 250px;
+ margin: 10px;
  background: #f857a53b;
  background: -webkit-radial-gradient(circle, #f857a567 0%, #ff585870 100%);
  background: radial-gradient(circle, #f857a567 0%, #ff585870 100%);
