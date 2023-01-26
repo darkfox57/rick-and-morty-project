@@ -1,7 +1,7 @@
 import './App.css'
 // import Card from './components/Card/Card.jsx'
 import Cards from './components/Cards/Cards.jsx'
-import SearchBar from './components/SearchBar/SearchBar.jsx'
+import Nav from './components/Nav/Nav'
 import characters from './data.js'
 
 function App() {
@@ -17,11 +17,8 @@ function App() {
         />
       </div>
       <hr /> */}
-      <div>
-        <SearchBar
-          onSearch={(characterID) => window.alert(characterID)}
-        />
-      </div>
+      <Nav />
+
       <div>
         <Cards
           characters={characters}
