@@ -24,6 +24,14 @@
  border: 1px solid #fff;
 }
 
+.searchInput::placeholder {
+ color: #fff;
+}
+
+.searchInput::placeholder:focus {
+ color: transparent;
+}
+
 .searchButton {
  box-sizing: border-box;
  border: none;
