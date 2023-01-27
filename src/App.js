@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About/About.jsx';
 import Cards from './components/Cards/Cards.jsx';
+import Detail from './components/Detail/Detail.jsx';
 import Nav from './components/Nav/Nav';
 
 
@@ -31,13 +32,10 @@ function App() {
     <div className='App' >
       <Nav onSearch={onSearch} />
       <Routes>
+        <Route path='/' element={<Cards characters={characters} onClose={onClose} />} >Home</Route>
         <Route path='/about' element={<About />} >About</Route>
-        {/* <Route path='/cards' element={<Cards />} >Cards</Route> */}
-        <Route path='/nav' element={<Nav />} >Nav</Route>
+        <Route path='/detail/:id' element={<Detail />} >Detail</Route>
       </Routes>
-      <div>
-        <Cards characters={characters} onClose={onClose} />
-      </div>
     </div>
   )
 }

@@ -1,9 +1,10 @@
-
-
+// import styles from './about.modules.css'
+import React from 'react'
 export default function About() {
  return (
   <>
-  <img src='/assets/rick-and-morty-bg.webp' alt="About" />
+  <h2>About me</h2>
   </>
  )
 }
+
