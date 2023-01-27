@@ -20,26 +20,10 @@
  height: 230px;
 }
 
-/* .card {
- display: flex;
- flex-direction: column;
- gap: 10px;
- padding-bottom: 30px;
- max-width: 20%;
- background: #fff;
- border-radius: 16px;
- box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
- border: 1px solid rgba(255, 255, 255, 0.3);
- transition: all 0.5s ease-in-out;
- position: relative;
- overflow: hidden;
-} */
-
 .card:hover {
  scale: 1.05;
  height: 290px;
 }
-
 
 .contentDiv {
  display: flex;
@@ -65,11 +49,6 @@
  transition: all 0.5s ease-in-out;
  z-index: 10;
 }
-
-/* .image:hover {
- transform: translateY(-25px);
-} */
-
 
 .buttonsDiv {
  display: flex;
