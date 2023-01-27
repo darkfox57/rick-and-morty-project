@@ -1,6 +1,6 @@
 
+import Counter from '../Counter/Counter';
 import styles from './card.module.css';
-import Counter from './counter';
 
 export default function Card(props) {
    const {name, species, gender, image, onClose} = props;

@@ -17,7 +17,7 @@
  transition: all 0.5s ease-in-out;
  position: relative;
  color: #fff;
- height: 250px;
+ height: 230px;
 }
 
 /* .card {
@@ -37,7 +37,7 @@
 
 .card:hover {
  scale: 1.05;
- height: 320px;
+ height: 290px;
 }
 
 
@@ -45,16 +45,17 @@
  display: flex;
  flex-direction: column;
  gap: 10px;
- top: 50px;
+ position: absolute;
+ /* bottom: 50px; */
  opacity: 0;
  transition: all 0.5s ease-in-out;
- position: absolute;
  z-index: 1;
 }
 
 .card:hover .contentDiv {
- top: 310px;
+ /* top: 0px; */
  opacity: 1;
+ position: relative;
 }
 
 .image {
@@ -79,23 +80,8 @@
  width: 90%;
 }
 
-.counter {
- display: flex;
- gap: 3px;
- align-items: center;
- ;
-}
-
-.counter button {
- border: none;
- padding: 0;
- background: transparent;
- font-size: 22px;
- color: #fff;
-}
-
 .title {
- font-size: 1.5rem;
+ font-size: 1.2rem;
  line-height: 1.6rem;
  margin: 0;
  transition: all 0.5s ease-in-out;

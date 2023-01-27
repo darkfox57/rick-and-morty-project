@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './card.module.css';
+import styles from './counter.module.css';
 
 
 function ShowCount(props) {
