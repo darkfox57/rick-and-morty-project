@@ -14,16 +14,16 @@ function App() {
   const [access, setAccess] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
-  const [success, setSuccess] = useState('')
+  const [successLogin, setSuccessLogin] = useState('')
   let username = 'user@rickymorty.com'
   let password = '123asd'
   const login = (userData) => {
     if (userData.password === password && userData.username === username) {
       setAccess(true)
       navigate('/home')
-      setSuccess('')
+      setSuccessLogin('')
     } else {
-      setSuccess('Acceso invalido')
+      setSuccessLogin('Acceso invalido')
     }
   }
   const logOut = () => {
@@ -60,7 +60,7 @@ function App() {
         <Nav onSearch={onSearch} logOut={logOut} />
       )}
       <Routes>
-        <Route path='/' element={<Form login={login} success={success} />}>Form</Route>
+        <Route path='/' element={<Form login={login} successLogin={successLogin} />}>Form</Route>
         <Route path='/home' element={<Cards characters={characters} onClose={onClose} />} >Home</Route>
         <Route path='/about' element={<About />} >About</Route>
         <Route path='/detail/:id' element={<Detail />} >Detail</Route>

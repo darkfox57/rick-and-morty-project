@@ -3,7 +3,7 @@ import styles from './form.module.css'
 import { validate } from './validation.js'
 
 export default function Form (props) {
-    const {login, success} = props
+    const {login, successLogin} = props
  const [ userData, setUserData] = useState({
   username: '',
   password: ''
@@ -26,35 +26,42 @@ const handleInputChange = (e) => {
 
 const handleSubmit = (e) => {
 e.preventDefault()
- login(userData)
+login(userData)
 }
 
- return (
-  <div className={styles.loginForm}>
-   <form onSubmit={handleSubmit}>
-    <label >Username</label>
-    <input 
+return (
+    <div className={styles.formContainer}>
+        <form className={styles.loginForm} onSubmit={handleSubmit} autocomplete="off">
 
-    className={errors.usarname && 'warning'}
-    type="text" 
-    name='username' 
-    value={userData.username} 
-    onChange={handleInputChange} />
-<p className='danger'>{errors.username}</p>
-
-
-    <label >Password</label>
-    <input 
-    className={errors.password && 'warning'}
-    type="text" 
-    name='password' 
-    value={userData.password} 
-    onChange={handleInputChange} />
-<p className='danger'>{errors.password}</p>
-
-    <button type='submit' disabled={Object.keys(errors).length ? true : false} >LOGIN</button>
-    <p className='danger' >{success}</p>
-   </form>
-  </div>
- )
+            <div className={styles.formItem}>
+                <label className={styles.label}>Username</label>
+                <input 
+                className={/*errors.password ? styles.warning :*/ styles.input}
+                type="text" 
+                // placeholder="Ingresa tu email"
+                name='username' 
+                value={userData.username} 
+                onChange={handleInputChange} />
+                <span className={styles.bar}></span>
+                <span className={styles.error}>{errors.username}</span>
+            </div>
+            <div className={styles.formItem}>
+                <label className={styles.label}>Password</label>
+                <input 
+                className={/*errors.password ? styles.warning :*/ styles.input}
+                type="text"
+                // placeholder="Ingresa tu contraseña" 
+                name='password' 
+                value={userData.password} 
+                onChange={handleInputChange} />
+                <span className={styles.bar}></span>
+                <span className={styles.error}>{errors.password}</span>
+            </div>
+            <div className={styles.formItem}>
+                <button type='submit' disabled={Object.keys(errors).length ? true : false} >LOGIN</button>
+                <span className={styles.error} >{successLogin}</span>
+            </div>
+        </form>
+    </div>
+    )
 }

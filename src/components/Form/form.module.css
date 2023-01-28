@@ -1,0 +1,113 @@
+.formContainer {
+ padding: 50px 50px;
+ background: #f857a53b;
+ background: -webkit-radial-gradient(circle, #f857a567 0%, #ff585870 100%);
+ background: radial-gradient(circle, #f857a567 0%, #ff585870 100%);
+ border-radius: 16px;
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ align-self: center;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ min-width: 260px
+}
+
+.loginForm {
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+ width: 100%;
+}
+
+.formItem {
+ display: flex;
+ flex-direction: column;
+ position: relative;
+}
+
+.input {
+ font-size: 16px;
+ font-family: 'Nobile', sans-serif;
+ padding: 7px 20px;
+ display: block;
+ border: none;
+ border-bottom: 1px solid #d8d8d8;
+ background-color: transparent;
+ color: #e1e1e5;
+ border-radius: 13px;
+}
+
+.input:focus {
+ outline: none;
+ background-color: transparent !important;
+ color: #fff;
+ ;
+}
+
+.label {
+ color: #e1e1e5;
+ font-size: 14px;
+ font-weight: normal;
+ pointer-events: none;
+ transition: 0.2s ease all;
+ align-self: flex-start;
+}
+
+.bar {
+ position: relative;
+ display: block;
+ width: 95%;
+ align-self: center;
+}
+
+.bar:before,
+.bar:after {
+ content: '';
+ height: 1px;
+ width: 0;
+ bottom: 1px;
+ position: absolute;
+ background: #ffffff;
+ transition: 0.2s ease all;
+ -moz-transition: 0.2s ease all;
+ -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+ left: 50%;
+}
+
+.bar:after {
+ right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+ width: 50%;
+}
+
+.error {
+ color: #d8d8d8;
+ font-size: 14px;
+ padding-top: 10px;
+ max-width: 260px;
+ line-height: 1.1rem;
+}
+
+.formItem button {
+ color: #e1e1e5;
+ border: 1px solid #e1e1e5;
+ background-color: transparent;
+ border-radius: 13px;
+ padding: 7px 30px;
+ transition: all 0.5s ease-in-out;
+}
+
+.formItem button:hover {
+ box-shadow: 4px 4px #e1e1e5;
+ transform: translateX(5px);
+ scale: 1.02;
+}
