@@ -1,5 +1,5 @@
 // import styles from './detail.module.css'
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 export default function Details () {
@@ -13,11 +13,11 @@ export default function Details () {
       if (char.name) {
         setCharacter(char);
       } else {
-        window.alert("No hay personajes con ese ID");
+        alert("No hay personajes con ese ID");
       }
     })
     .catch((err) => {
-      window.alert("No hay personajes con ese ID");
+      alert("No hay personajes con ese ID");
     });
   return setCharacter({});
 }, [id]);

@@ -1,4 +1,5 @@
 
+import React from "react";
 import { Link } from 'react-router-dom';
 import Counter from '../Counter/Counter';
 import styles from './card.module.css';

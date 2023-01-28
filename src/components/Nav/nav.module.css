@@ -16,3 +16,49 @@
  z-index: 100;
  width: 100%;
 }
+
+.nav {
+ list-style: none;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 18px;
+}
+
+.navItem a {
+ text-transform: uppercase;
+ font-family: 'Josefin Sans', sans-serif;
+ font-size: 14px;
+ font-weight: 700;
+ color: #fff;
+ text-decoration: none;
+}
+
+.active {
+ color: #fff;
+}
+
+.logOut {
+ box-sizing: border-box;
+ border: 1px solid #fff;
+ background-color: transparent;
+ color: #fff;
+ font-size: 16px;
+ padding: 10px 20px;
+ border-radius: 7px;
+ max-width: 100px;
+ transition: all 0.5s ease-in-out;
+
+}
+
+.logOut:hover {
+ box-sizing: border-box;
+ border: none;
+ background-color: #fff;
+ color: #000;
+ font-size: 16px;
+ padding: 10px 20px;
+ border-radius: 7px;
+ max-width: 100px;
+
+}
