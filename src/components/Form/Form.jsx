@@ -62,6 +62,16 @@ return (
                 <span className={styles.error} >{successLogin}</span>
             </div>
         </form>
+        <div className={styles.datosAcceso}>
+            <div className={styles.icon}>
+                <div className={styles.tooltip}>
+                    <p>Usuario: user@rickymorty.com</p>
+                    <p>contraseña: 123asd</p>
+                </div>
+                <span>?</span>
+            </div>
+        </div>
+        
     </div>
     )
 }
