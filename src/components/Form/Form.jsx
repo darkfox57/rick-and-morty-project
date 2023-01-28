@@ -2,7 +2,8 @@ import React, { useState } from "react"
 import styles from './form.module.css'
 import { validate } from './validation.js'
 
-export default function Form ({login}) {
+export default function Form (props) {
+    const {login, success} = props
  const [ userData, setUserData] = useState({
   username: '',
   password: ''
@@ -24,6 +25,7 @@ const handleInputChange = (e) => {
 }
 
 const handleSubmit = (e) => {
+e.preventDefault()
  login(userData)
 }
 
@@ -51,6 +53,7 @@ const handleSubmit = (e) => {
 <p className='danger'>{errors.password}</p>
 
     <button type='submit' disabled={Object.keys(errors).length ? true : false} >LOGIN</button>
+    <p className='danger' >{success}</p>
    </form>
   </div>
  )

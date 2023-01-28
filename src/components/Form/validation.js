@@ -1,6 +1,6 @@
 
 const regexEmail = /^[a-zA-Z0-9._%+-]{1,35}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-// const regexPass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]$/
+const regexPass = /[a-zA-Z]/ && /[0-9]/
 const regexPassLength = /^.{6,10}$/
 
 
@@ -20,9 +20,9 @@ export function validate(input) {
  if (!regexPassLength.test(input.password)) {
   errors.password = 'El campo debe entre 6 y 10 caracteres';
  }
- // else if (!regexPass.test(input.password)) {
- //  errors.password = 'La contraseña requiere al menos una letra y un numero';
- // }
+ else if (!regexPass.test(input.password)) {
+  errors.password = 'La contraseña requiere al menos una letra y un numero';
+ }
 
  return errors;
 }
@@ -47,9 +47,32 @@ export function validate(input) {
 //   case !regexPass.test(input.password):
 //    errors.password = 'La contraseña requiere al menos una letra y un numero';
 //    break;
-
-
 //  }
 
 //  return errors;
 // }
+
+// const regexEmail = /^[a-zA-Z0-9._%+-]{1,35}@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
+// const regexPass = /^[A-Za-z]\d[A-Za-z]$/;
+// const regexPassLength = /^.{6,10}$/;
+
+
+// const errormsj = "email";
+
+// const emailValido = "user@hotmail.com";
+// const emailFail = "sjhasd";
+// const passvalido = "assd";
+// const passFail = "";
+
+
+// const generalMessage = {
+//   email: () => (regexEmail.test(emailValido) ? "Es valido " : "No es valido"),
+// };
+
+// const default_message = () => "Ingresa los datos";
+
+// const result = generalMessage[errormsj]
+//   ? generalMessage[errormsj]()
+//   : default_message;
+
+// result;
