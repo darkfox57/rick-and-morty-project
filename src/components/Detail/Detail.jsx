@@ -21,7 +21,7 @@ export default function Details () {
     });
   return setCharacter({});
 }, [id]);
-const handleClick = () => navigate('/')
+const handleClick = () => navigate('/home')
 
 console.log(character);
  return (
