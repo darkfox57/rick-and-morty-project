@@ -3,6 +3,7 @@
  place-content: center space-between;
  place-items: center center;
  gap: 5px;
+ padding: 0 5%;
  white-space: nowrap;
  position: fixed;
  z-index: 100;
@@ -37,7 +38,7 @@
  gap: 18px;
  flex-grow: 1;
  list-style: none;
- max-width: 370px;
+ max-width: 300px;
 }
 
 .navItem a {
