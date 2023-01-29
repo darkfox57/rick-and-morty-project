@@ -31,7 +31,7 @@ login(userData)
 
 return (
     <div className={styles.formContainer}>
-        <form className={styles.loginForm} onSubmit={handleSubmit} autocomplete="off">
+        <form className={styles.loginForm} onSubmit={handleSubmit} autoComplete="off">
 
             <div className={styles.formItem}>
                 <label className={styles.label}>Username</label>

@@ -1,7 +1,9 @@
-import React, { useState } from "react"
-import styles from './SearchBar.module.css'
+import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import styles from './SearchBar.module.css';
 
 export default function SearchBar (props) {
+   const navigate = useNavigate()
    const {  onSearch } = props
    const [ search, setSearch ] = useState('')
    const handleInputValue =(event)=>{
@@ -9,6 +11,7 @@ export default function SearchBar (props) {
    }
    const handleSumbit =(e)=>{
       e.preventDefault()
+      navigate('/home')
       if(Object.keys(search).length) {
          e.target.reset()
       }
@@ -21,3 +24,4 @@ export default function SearchBar (props) {
 
    )
   }
+

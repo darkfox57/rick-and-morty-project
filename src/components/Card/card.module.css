@@ -17,23 +17,32 @@
  transition: all 0.5s ease-in-out;
  position: relative;
  color: #fff;
- height: 230px;
+ height: 220px;
+}
+
+.card a {
+ text-decoration: none;
 }
 
 .card:hover {
  scale: 1.05;
- height: 290px;
+ height: 260px;
+}
+
+.verticalSeparator {
+ font-size: 1rem;
+ width: 2px;
+ background-color: #fff;
 }
 
 .contentDiv {
- display: flex;
- flex-direction: column;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
  gap: 10px;
- position: absolute;
- /* bottom: 50px; */
  opacity: 0;
  transition: all 0.5s ease-in-out;
  z-index: 1;
+ text-align: center;
 }
 
 .card:hover .contentDiv {
@@ -65,6 +74,7 @@
  margin: 0;
  transition: all 0.5s ease-in-out;
  font-family: 'Josefin Sans', sans-serif;
+ color: #fff;
 }
 
 .title:hover {
@@ -72,10 +82,12 @@
 }
 
 .content {
- font-size: 1.2rem;
- line-height: 1.3rem;
+ font-size: 14px;
+ line-height: 1rem;
  margin: 0;
  font-family: 'Nobile', sans-serif;
+ font-weight: normal;
+ letter-spacing: 1px;
 }
 
 .close {

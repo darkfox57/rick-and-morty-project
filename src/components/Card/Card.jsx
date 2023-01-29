@@ -13,12 +13,13 @@ export default function Card(props) {
          <Counter count={0}/>
          <button className={styles.close} onClick={onClose}>X</button>
       </div>
-      <img src={image} alt={name} className={styles.image} />
       <Link to={`/detail/${id}`} >
+      <img src={image} alt={name} className={styles.image} />
       <h2 className={styles.title}>{name}</h2>
       </Link>
       <div className={styles.contentDiv}>
       <p className={styles.content}>{species}</p>
+      {/* <div className={styles.verticalSeparator}></div> */}
       <p className={styles.content}>{gender}</p>
       </div>
    </div>
