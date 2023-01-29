@@ -38,7 +38,6 @@
  align-items: center;
  justify-content: center;
  gap: 18px;
- padding: 0;
  flex-grow: 1;
  max-width: 370px;
 }

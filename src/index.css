@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Nobile&family=Pridi:wght@200&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -18,13 +22,15 @@ code {
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;
-  ;
+  margin: 0;
 }
 
 h2 h3 h4 h5 {
   font-family: 'Nobile', sans-serif;
+  margin: 0;
 }
 
 p {
   font-family: 'Pridi', serif;
+  margin: 0;
 }

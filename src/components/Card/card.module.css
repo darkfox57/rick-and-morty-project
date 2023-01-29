@@ -3,9 +3,8 @@
  flex-direction: column;
  gap: 10px;
  align-items: center;
- padding: 30px 5px 10px 5px;
- max-width: 210px;
- margin: 10px;
+ padding: 30px 10px 10px 10px;
+ max-width: 230px;
  background: #f857a53b;
  background: -webkit-radial-gradient(circle, #f857a567 0%, #ff585870 100%);
  background: radial-gradient(circle, #f857a567 0%, #ff585870 100%);
@@ -27,7 +26,7 @@
 .card:hover {
  scale: 1.05;
  /* height: 260px; */
- box-shadow: 3px 3px #e1e1e5;
+ box-shadow: 4px 4px #e1e1e5;
  /* transform: translateX(5px); */
  /* scale: 1.02; */
 }
@@ -64,10 +63,10 @@
 .title {
  font-size: 1.2rem;
  line-height: 1.6rem;
- margin: 0;
  transition: all 0.5s ease-in-out;
  font-family: 'Josefin Sans', sans-serif;
  color: #fff;
+ margin: 0;
 }
 
 .title:hover {
@@ -87,10 +86,10 @@
 .content {
  font-size: 12px;
  line-height: 1rem;
- margin: 0;
  font-family: 'Nobile', sans-serif;
  font-weight: normal;
  letter-spacing: 1px;
+ margin: 0;
 }
 
 .close {
