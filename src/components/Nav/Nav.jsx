@@ -1,6 +1,7 @@
 
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import logo from '../../assets/rick-and-morty-logo.webp';
 import SearchBar from "../SearchBar/SearchBar";
 import styles from "./nav.module.css";
 
@@ -9,12 +10,12 @@ export default function Nav(props) {
  return (
 
   <div className={styles.navContainer}>
-    <img src='/rick-and-morty-logo.svg' alt="Rick And Morty" />
-   <div>
+    <Link to='/home'>
+    <img src={logo} alt="Rick And Morty" />
+    </Link>
     <SearchBar
      onSearch={props.onSearch}
     />
-   </div>
    <ul className={styles.nav}>
     <li className={styles.navItem}>
     <NavLink to='/home'>Home</NavLink>
@@ -22,8 +23,10 @@ export default function Nav(props) {
     <li className={styles.navItem}>
      <NavLink to='/about'>About</NavLink>
      </li>
-   </ul>
+     <li>
    <button className={styles.logOut} onClick={logOut}>LogOut</button>
+     </li>
+   </ul>
   </div>
  )
 }

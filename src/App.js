@@ -6,7 +6,7 @@ import Cards from './components/Cards/Cards.jsx';
 import Detail from './components/Detail/Detail.jsx';
 import Form from "./components/Form/Form";
 import Nav from './components/Nav/Nav';
-
+import './css/normalize.css';
 
 function App() {
 

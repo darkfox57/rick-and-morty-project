@@ -3,7 +3,7 @@
  flex-direction: column;
  gap: 10px;
  align-items: center;
- padding: 30px 5px 30px 5px;
+ padding: 30px 5px 10px 5px;
  max-width: 210px;
  margin: 10px;
  background: #f857a53b;
@@ -18,7 +18,6 @@
  transition: all 0.5s ease-in-out;
  position: relative;
  color: #fff;
- height: 235px;
 }
 
 .card a {
@@ -27,7 +26,10 @@
 
 .card:hover {
  scale: 1.05;
- height: 260px;
+ /* height: 260px; */
+ box-shadow: 3px 3px #e1e1e5;
+ /* transform: translateX(5px); */
+ /* scale: 1.02; */
 }
 
 .verticalSeparator {
@@ -36,21 +38,12 @@
  background-color: #fff;
 }
 
-.contentDiv {
- display: grid;
- grid-template-columns: repeat(2, 1fr);
- gap: 10px;
- opacity: 0;
- transition: all 0.5s ease-in-out;
- z-index: 1;
- text-align: center;
-}
 
-.card:hover .contentDiv {
- /* top: 0px; */
+
+/* .card:hover .contentDiv {
  opacity: 1;
  position: relative;
-}
+} */
 
 .image {
  border: 5px solid #fff;
@@ -81,8 +74,18 @@
  scale: 1.1;
 }
 
+.contentDiv {
+ display: grid;
+ grid-template-columns: 50% 50%;
+ justify-content: space-around;
+ gap: 10px;
+ transition: all 0.5s ease-in-out;
+ text-align: center;
+ width: 90%;
+}
+
 .content {
- font-size: 14px;
+ font-size: 12px;
  line-height: 1rem;
  margin: 0;
  font-family: 'Nobile', sans-serif;
