@@ -1,8 +1,8 @@
 .cards {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
- padding: 0 10%;
- width: 100%;
+ /* padding: 0 10%; */
+ width: 80%;
  justify-items: center;
  ;
 }
