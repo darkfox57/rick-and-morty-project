@@ -10,8 +10,8 @@
  border-radius: 7px;
  background: transparent;
  width: 40%;
- font-size: 16px;
- padding: 5px 20px;
+ font-size: 14px;
+ padding: 7px 30px;
  box-sizing: border-box;
  color: #fff;
  letter-spacing: 1px;
@@ -33,10 +33,18 @@
 }
 
 .searchButton {
- box-sizing: border-box;
- border: none;
- font-size: 16px;
- padding: 10px 20px;
+ color: #e1e1e5;
+ border: 1px solid #e1e1e5;
+ background-color: transparent;
  border-radius: 7px;
+ padding: 7px 30px;
+ transition: all 0.5s ease-in-out;
+ font-weight: 300;
+ font-family: 'Pridi', serif;
+}
 
+.searchButton:hover {
+ box-shadow: 4px 4px #e1e1e5;
+ transform: translateX(5px);
+ scale: 1.02;
 }

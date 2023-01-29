@@ -7,7 +7,9 @@ import styles from "./nav.module.css";
 export default function Nav(props) {
   const {logOut} = props
  return (
+
   <div className={styles.navContainer}>
+    <img src='.src/assets/rick-and-morty-logo.svg' alt="Rick And Morty" />
    <div>
     <SearchBar
      onSearch={props.onSearch}

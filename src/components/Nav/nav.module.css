@@ -39,26 +39,19 @@
 }
 
 .logOut {
- box-sizing: border-box;
- border: 1px solid #fff;
+ color: #e1e1e5;
+ border: 1px solid #e1e1e5;
  background-color: transparent;
- color: #fff;
- font-size: 16px;
- padding: 10px 20px;
  border-radius: 7px;
- max-width: 100px;
+ padding: 7px 30px;
  transition: all 0.5s ease-in-out;
-
+ font-weight: 300;
+ font-family: 'Pridi', serif;
+ width: 100px;
 }
 
 .logOut:hover {
- box-sizing: border-box;
- border: none;
- background-color: #fff;
- color: #000;
- font-size: 16px;
- padding: 10px 20px;
- border-radius: 7px;
- max-width: 100px;
-
+ box-shadow: 4px 4px #e1e1e5;
+ transform: translateX(5px);
+ scale: 1.02;
 }
