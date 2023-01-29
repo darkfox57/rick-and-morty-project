@@ -19,7 +19,6 @@ export default function Card(props) {
       </Link>
       <div className={styles.contentDiv}>
       <p className={styles.content}>{species}</p>
-      {/* <div className={styles.verticalSeparator}></div> */}
       <p className={styles.content}>{gender}</p>
       </div>
    </div>

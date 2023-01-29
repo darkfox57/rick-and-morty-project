@@ -1,7 +1,7 @@
 .cards {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
- width: 80%;
  justify-items: center;
  gap: 20px;
+ width: 80%;
 }
