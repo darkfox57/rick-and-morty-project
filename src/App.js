@@ -4,6 +4,7 @@ import './App.css';
 import About from './components/About/About.jsx';
 import Cards from './components/Cards/Cards.jsx';
 import Detail from './components/Detail/Detail.jsx';
+import Error404 from './components/Error404/Error404.jsx';
 import Form from "./components/Form/Form";
 import Nav from './components/Nav/Nav';
 import './css/normalize.css';
@@ -65,6 +66,7 @@ function App() {
         <Route path='/home' element={<Cards characters={characters} onClose={onClose} />} >Home</Route>
         <Route path='/about' element={<About />} >About</Route>
         <Route path='/detail/:id' element={<Detail />} >Detail</Route>
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </div>
   )
