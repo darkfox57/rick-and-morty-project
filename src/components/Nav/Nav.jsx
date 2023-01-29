@@ -9,7 +9,7 @@ export default function Nav(props) {
  return (
 
   <div className={styles.navContainer}>
-    <img src='.../assets/rick-and-morty-logo.svg' alt="Rick And Morty" />
+    <img src='/rick-and-morty-logo.svg' alt="Rick And Morty" />
    <div>
     <SearchBar
      onSearch={props.onSearch}
