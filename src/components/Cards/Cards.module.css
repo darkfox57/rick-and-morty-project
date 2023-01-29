@@ -2,6 +2,9 @@
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
  padding: 0 10%;
+ width: 100%;
+ justify-items: center;
+ ;
 }
 
 /* .cards {
