@@ -24,6 +24,7 @@ function App() {
       setSuccessLogin('')
     } else {
       setSuccessLogin('Acceso invalido')
+      navigate('/')
     }
   }
   const logOut = () => {
