@@ -34,6 +34,7 @@ function App() {
 
   useEffect(() => {
     !access && navigate('/');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [access]);
 
   const onSearch = (character) => {
