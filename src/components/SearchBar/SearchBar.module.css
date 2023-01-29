@@ -3,6 +3,8 @@
  gap: 30px;
  align-items: center;
  justify-content: center;
+ flex-grow: 2;
+ max-width: 650px;
 }
 
 .searchInput {

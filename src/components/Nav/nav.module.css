@@ -1,8 +1,8 @@
 .navContainer {
- display: grid;
+ display: flex;
  align-content: center;
- justify-content: center;
- grid-template-columns: 20% 50% 30%;
+ justify-content: space-around;
+ /* grid-template-columns: 20% 50% 30%; */
  height: 75px;
  background: #f857a53b;
  background: -webkit-radial-gradient(circle, #f857a567 0%, #ff585870 100%);
@@ -16,11 +16,20 @@
  z-index: 100;
  width: 100%;
  gap: 5px;
+ white-space: nowrap
+}
+
+.navContainer a {
+ max-width: 100%;
+ height: auto;
+ align-self: center;
 }
 
 .navContainer img {
  max-width: 100%;
  height: auto;
+ max-height: 60px;
+ flex-grow: 1;
 }
 
 .nav {
@@ -29,6 +38,9 @@
  align-items: center;
  justify-content: center;
  gap: 18px;
+ padding: 0;
+ flex-grow: 1;
+ max-width: 370px;
 }
 
 .navItem a {

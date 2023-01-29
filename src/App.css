@@ -14,4 +14,6 @@
    align-items: center;
    gap: 32px;
    padding-top: 120px;
+   margin: 0;
+   position: relative;
 }
