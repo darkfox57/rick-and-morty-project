@@ -57,16 +57,25 @@ function App() {
   }
   return (
     <div className='App' >
-      {location.pathname === '/' ? (
-        ''
-      ) : (
-        <Nav onSearch={onSearch} logOut={logOut} />
-      )}
+      {location.pathname === '/' ? 
+      <div className="animated-bg">
+        <div className='light x1'></div>
+        <div className='light x2'></div>
+        <div className='light x3'></div>
+        <div className='light x4'></div>
+        <div className='light x5'></div>
+        <div className='light x6'></div>
+        <div className='light x7'></div>
+        <div className='light x8'></div>
+        <div className='light x9'></div>
+      </div>
+      : ''}
+      {location.pathname === '/' ? '' : <Nav onSearch={onSearch} logOut={logOut} />}
       <Routes>
-        <Route path='/' element={<LoginForm login={login} successLogin={successLogin} />}>Form</Route>
-        <Route path='/home' element={<Cards characters={characters} onClose={onClose} />} >Home</Route>
-        <Route path='/about' element={<About />} >About</Route>
-        <Route path='/detail/:id' element={<Detail />} >Detail</Route>
+        <Route path='/' element={<LoginForm login={login} successLogin={successLogin} />} />
+        <Route path='/home' element={<Cards characters={characters} onClose={onClose} />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/detail/:id' element={<Detail />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </div>

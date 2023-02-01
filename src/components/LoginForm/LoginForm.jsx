@@ -49,7 +49,7 @@ return (
                 <label className={styles.label}>Password</label>
                 <input 
                 className={/*errors.password ? styles.warning :*/ styles.input}
-                type="text"
+                type="password"
                 // placeholder="Ingresa tu contraseña" 
                 name='password' 
                 value={userData.password} 

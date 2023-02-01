@@ -3,9 +3,6 @@ const regexEmail = /^[a-zA-Z0-9._%+-]{1,35}@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 const regexPass = /[a-zA-Z]/ && /[0-9]/
 const regexPassLength = /^.{6,10}$/
 
-
-
-
 export function validate(input) {
  let errors = {};
 
