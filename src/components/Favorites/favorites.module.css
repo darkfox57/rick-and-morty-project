@@ -1,0 +1,32 @@
+.favorites {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ place-items: center center;
+ place-content: center center;
+ gap: 32px;
+}
+
+.selectors {
+ display: flex;
+ gap: 10px;
+}
+
+.selector {
+ padding: 7px 15px;
+ background-color: transparent;
+ border: 1px solid #fff;
+ color: #fff;
+}
+
+.selector option {
+ color: #000;
+}
+
+.cards {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+ justify-items: center;
+ gap: 20px;
+ width: 80%;
+}

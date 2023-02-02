@@ -23,6 +23,9 @@ export default function Nav(props) {
     <li className={styles.navItem}>
      <NavLink to='/about'>About</NavLink>
      </li>
+     <li className={styles.navItem}>
+      <NavLink to='/favorites'>Favorites</NavLink>
+     </li>
      <li>
    <button className={styles.logOut} onClick={logOut}>LogOut</button>
      </li>

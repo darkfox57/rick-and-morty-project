@@ -43,6 +43,13 @@
  width: 90%;
 }
 
+.buttonsDiv button {
+ padding: 0;
+ border: none;
+ background-color: transparent;
+ font-size: 18px;
+}
+
 .title {
  font-family: 'Josefin Sans', sans-serif;
  font-size: 1.2rem;
