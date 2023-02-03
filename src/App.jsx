@@ -8,10 +8,11 @@ import Error404 from './components/Error404/Error404';
 import Favorites from './components/Favorites/Favorites';
 import LoginForm from "./components/LoginForm/LoginForm";
 import Nav from './components/Nav/Nav';
+import Social from './components/Social/Social';
 import './css/normalize.css';
 
-function App() {
 
+function App() {
   const [characters, setCharacters] = useState([])
   const [access, setAccess] = useState(false)
   const location = useLocation()
@@ -58,6 +59,7 @@ function App() {
   }
   return (
     <div className='App' >
+      <Social />
       {location.pathname === '/' ? 
       <div className="animated-bg">
         <div className='light x1'></div>
