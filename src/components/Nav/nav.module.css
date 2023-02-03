@@ -38,7 +38,7 @@
  gap: 18px;
  flex-grow: 1;
  list-style: none;
- max-width: 300px;
+ max-width: 400px;
 }
 
 .navItem a {
@@ -69,4 +69,47 @@
  box-shadow: 4px 4px #e1e1e5;
  transform: translateX(5px);
  scale: 1.02;
+}
+
+.toggle {
+ display: none;
+ border: none;
+ background: transparent;
+ padding: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+
+ .navContainer {
+  flex-direction: column;
+  height: auto;
+  padding: 20px 0;
+ }
+
+ .nav {
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  height: auto;
+ }
+
+
+ .navItem {
+  width: 100%;
+  text-align: center;
+ }
+
+ .toggle {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+ }
+
+ .toggle img {
+  width: 100%;
+ }
 }

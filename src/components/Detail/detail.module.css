@@ -1,0 +1,65 @@
+.detail {
+ padding: 10px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ place-content: center center;
+ place-items: center center;
+ gap: 50px;
+}
+
+.cardContainer {
+ display: flex;
+ width: fit-content;
+ flex-wrap: wrap;
+ place-content: center center;
+ place-items: center center;
+ gap: 32px;
+ padding: 20px;
+ border-radius: 16px;
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ color: #fff;
+ background: #f857a53b;
+ background: -webkit-radial-gradient(circle, #f857a567 0%, #ff585870 100%);
+ background: radial-gradient(circle, #f857a567 0%, #ff585870 100%);
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ transition: all 0.5s ease-in-out;
+}
+
+.cardContainer:hover {
+ scale: 1.05;
+ box-shadow: 4px 4px #e1e1e5;
+}
+
+.cardImg img {
+ border-radius: 13px;
+ width: 100%;
+}
+
+.cardContent {
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ font-size: 1.3rem;
+ align-items: flex-start;
+}
+
+.goBack {
+ color: #e1e1e5;
+ border: 1px solid #e1e1e5;
+ background-color: transparent;
+ border-radius: 7px;
+ padding: 7px 30px;
+ transition: all 0.5s ease-in-out;
+ font-weight: 300;
+ font-family: 'Pridi', serif;
+}
+
+.goBack:hover {
+ box-shadow: 4px 4px #e1e1e5;
+ transform: translateX(5px);
+ scale: 1.02;
+}
